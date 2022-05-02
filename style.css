@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Macondo Swash Caps', cursive;
-    color: #fafafa;
+    color: #333;
     background-image: url(assets/field.jpg);
     background-color: #000;
     background-position: center;
@@ -28,12 +28,24 @@ main {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 .container__text {
     text-align: center;
     border-radius: 30px;
+    background-color: rgba(70, 215, 231, 0.8);
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    height: fit-content;
+    padding: 1rem;
 }
 
 .container__sun {
@@ -44,22 +56,20 @@ h1 {
 
 .container__bangers {
     height: 300px;
-    border: 1px solid yellow;
 }
 
 .container__bangers img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid red;
 }
 
 .container__speakers {
-    height: 200px;
-    border: 1px solid yellow;
+    height: 250px;
     margin-block: 100px;
     transform: rotate(15deg);
     transition: transform 0.5s ease;
+    z-index: 1;
 }
 
 .container__speakers:hover {
@@ -70,20 +80,17 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid red;
 }
 
 .container__sun {
     height: 150px;
     margin: 1rem;
-    border: 1px solid yellow;
 }
 
 .container__sun img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid red;
 }
 
 
