@@ -1,0 +1,34 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/field.jpg);
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__text {
+    text-align: center;
+}
+
+.container__bangers {
+    height: 300px;
+    border: 1px solid yellow;
+}
+
+.container__bangers img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid red;
+}

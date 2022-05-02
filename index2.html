@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Our stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="icon" href="assets/futureworks.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- GSAP CDNs -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
+      defer
+    ></script>
+
+    <script src="script.js" defer></script>
+    <!-- Filter effects -->
+    <!-- <script src="MolecularImage_Squares.js" defer></script> -->
+    <script src="MolecularImage_Color.js" defer></script>
+
+    <title>Future Works</title>
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="assets/futureworks.png" class="preloader__logo" alt="#" />
+    </div>
+
+    <!-- Desktop navbar -->
+    <nav class="container__navbar">
+      <div class="container__navbar__content">
+        <div class="container__logo">
+          <a href="index.html"
+            ><img src="assets/futureworks.png" class="logo" alt="#"
+          /></a>
+        </div>
+        <div class="container__nav-links">
+          <ul>
+            <li>
+              <a
+                href="https://futureworksstudio.com/beats"
+                class="nav-link__hover"
+                >Beats</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="nav-link__hover">Portfolio</a>
+            </li>
+            <li><a href="#about" class="nav-link__hover">About</a></li>
+            <li>
+              <a
+                href="https://futureworksstudio.com/news"
+                class="nav-link__hover"
+                >News</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="container__contact">
+          <a
+            href="mailto:contact@futureworksstudio.com"
+            class="contact-btn"
+            style="color: #fafafa !important"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!--Bootstrap navbar-->
+    <nav
+      class="navbar navbar-expand-md bg-dark navbar-dark container__navbar__mobile"
+      style="background: black !important; position: fixed !important"
+    >
+      <a class="navbar-brand" href="index.html"
+        ><img src="assets/futureworks.png" class="logo__mobile" alt="#"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://futureworksstudio.com/beats"
+              style="color: #fafafa !important"
+              >Beats</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="portfolio.html"
+              style="color: #fafafa !important"
+              >Portfolio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="https://futureworksstudio.com/news"
+              style="color: #fafafa !important"
+              >News</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container__hero">
+        <div class="container__hero__content">
+          <div class="container__hero-text__left">
+            <h1>Future</h1>
+          </div>
+          <div class="container__3d-logo">
+            <iframe
+              src="https://my.spline.design/untitled-d4060851bc36b932e3d1c64625e562e2/"
+              frameborder="0"
+              width="100%"
+              height="100%"
+            ></iframe>
+          </div>
+          <div class="container__hero-text__right">
+            <h1>Works</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="container__works">
+        <div class="container__works__content">
+          <article class="works__card gradient-border">
+            <h3>Beat Making</h3>
+            <p>
+              We've got a wide selection of beats for licensing in a variety of
+              styles and genres. Get in touch and request a beat reel or book a
+              studio session if you already have an idea that you want to
+              develop.
+            </p>
+          </article>
+          <article class="works__card gradient-background gradient-border">
+            <h3>Mixing & Mastering</h3>
+            <p>
+              If you have one of your own productions or a production that
+              you've licensed from another producer and need it mixing with your
+              vocal then we can get your beat mixed and mastered.
+            </p>
+          </article>
+          <article class="works__card gradient-border">
+            <h3>Vocal Recording</h3>
+            <p>
+              When hip hop is all about the vocals they've gotta be just right
+              and so we use a top quality vocal mic setup for that high fidelity
+              sound.
+            </p>
+          </article>
+        </div>
+        <div class="container__primary-btn">
+          <button
+            class="primary-btn"
+            onclick="window.location.href='mailto:contact@futureworksstudio.com?subject=Project planning request &body=Hi Nick!'"
+          >
+            <span>Plan a project</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="container__song-services">
+        <div class="container__song-services__content">
+          <div class="container__text song-services">
+            <h2>Complete Song Services</h2>
+            <p>
+              We specialise in creating bass heavy music - hip hop, trap, grime,
+              drill, dubstep, UK garage and drum & bass. We write and create
+              beats, have a high quality vocal recording setup and will see to
+              it that your tracks are mixed and mastered to professional
+              standards.
+            </p>
+          </div>
+          <div class="container__img">
+            <img class="speaker-ball" src="assets/speaker-ball.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="container__project-launching">
+        <div class="container__project-launching__content">
+          <div class="container__text project-launching">
+            <h2>Project Launching</h2>
+            <p>
+              Making the music is only part of the process, and well thought out
+              strategy is essential when putting out music. We can support you
+              to develop your own comprehensive release plan to ensure that you
+              get the most out of your project and achieve what you set out to
+              achieve.
+            </p>
+          </div>
+          <div class="container__img">
+            <!-- <img src="assets/mixer-board.png" alt="" /> -->
+            <!-- <iframe
+              src="https://my.spline.design/morphingeffect3-d6f07a2a248869eac99058015bd94274/"
+              frameborder="0"
+              width="100%"
+              height="100%"
+            ></iframe> -->
+            <iframe
+              src="https://my.spline.design/morphingeffect4-4b40dd15565e49524f0f72ba6e441af3/"
+              frameborder="0"
+              width="100%"
+              height="100%"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container__about">
+        <div class="container__about__content">
+          <h2 class="about__animation">DeadNote</h2>
+          <p class="about__animation">
+            Nick is a producer, DJ and mixing engineer based in Gothenburg,
+            Sweden with several years of experience both in the studio and live.
+            Working under the aliases DeadNote and Zeitghost, founding member of
+            <a
+              href="https://www.facebook.com/bangersandmash.gbg/?ref=page_internal"
+              class="bangers"
+              target="_blank"
+              >Bangers & Mash Sound System</a
+            >, and Frequency dnb member, he is dedicated to pushing underground
+            music and sound system culture.
+          </p>
+          <div class="container__socials">
+            <a
+              class="about__animation"
+              href="https://www.instagram.com/futureworksstudio/"
+              target="_blank"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              class="about__animation"
+              href="https://www.twitch.tv/futureworksstudio"
+              target="_blank"
+              ><i class="ri-twitch-line"></i
+            ></a>
+            <a
+              class="about__animation"
+              href="https://soundcloud.com/futureworksstudio"
+              target="_blank"
+              ><i class="ri-soundcloud-line"></i
+            ></a>
+            <a
+              class="about__animation"
+              href="https://www.facebook.com/FutureWorksStudio/"
+              target="_blank"
+              ><i class="ri-facebook-line"></i
+            ></a>
+            <a
+              class="about__animation"
+              href="https://www.youtube.com/channel/UCmQoASaTakwbrKAvkBQ3VUw"
+              target="_blank"
+              ><i class="ri-youtube-line"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <canvas id="canvasMolecularImage"></canvas>
+    </main>
+  </body>
+</html>
