@@ -2,6 +2,8 @@
 const tingGanIn = document.querySelector("#tingGanIn");
 let isPlaying = false;
 
+document.addEventListener("load", togglePlay());
+
 function togglePlay() {
   tingGanIn.volume = 0;
   const fadeAudio = setInterval(() => {
@@ -24,20 +26,20 @@ function togglePlay() {
 }
 
 // GSAP
-gsap.from(".container__hero-text__left", {
+gsap.from(".container__text", {
   duration: 3,
-  x: "-100%",
+  y: "100%",
   opacity: 0,
   ease: "expo.out",
 });
 
-gsap.from(".container__hero-text__right", {
-  duration: 3,
-  x: "-10%",
-  opacity: 0,
-  delay: 1,
-  ease: "expo.out",
-});
+// gsap.from(".container__speakers", {
+//   duration: 3,
+//   y: "10%",
+//   opacity: 0,
+//   delay: 1,
+//   ease: "expo.out",
+// });
 
 // const timeline = gsap.timeline({ defaults: { duration: 1 } });
 // timeline

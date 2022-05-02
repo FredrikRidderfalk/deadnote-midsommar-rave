@@ -5,6 +5,8 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Macondo Swash Caps', cursive;
+    color: #fafafa;
     background-image: url(assets/field.jpg);
     background-color: #000;
     background-position: center;
@@ -13,12 +15,31 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
 }
 
 .container__text {
     text-align: center;
+    border-radius: 30px;
+}
+
+.container__sun {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .container__bangers {
@@ -33,16 +54,52 @@ body {
     border: 1px solid red;
 }
 
+.container__speakers {
+    height: 200px;
+    border: 1px solid yellow;
+    margin-block: 100px;
+    transform: rotate(15deg);
+    transition: transform 0.5s ease;
+}
+
+.container__speakers:hover {
+    transform: rotate(20deg) scale(110%);
+}
+
+.container__speakers img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid red;
+}
+
+.container__sun {
+    height: 150px;
+    margin: 1rem;
+    border: 1px solid yellow;
+}
+
+.container__sun img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid red;
+}
+
+
 /* Animations */
-  .speaker-ball {
-    animation: animatedimg 150s linear infinite;
+  .container__sun {
+    animation: animatedsun 0.6s ease-out infinite;
   }
   
-  @keyframes animatedimg {
+  @keyframes animatedsun {
       0% {
-          transform: rotate(0deg);
+          transform: scale(100%);
+      }
+      50% {
+          transform: scale(102%);
       }
       100% {
-          transform: rotate(360deg);
+          transform: scale(100%);
       }
   }

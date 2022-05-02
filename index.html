@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/sun.png" />
 
+    <!-- Fonts & icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- GSAP CDNs -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
@@ -24,19 +32,24 @@
     <title>Deadnote Presents: Midsommar</title>
   </head>
   <body>
+    <div class="container__sun">
+      <img src="assets/sun.png" alt="sun" />
+    </div>
+
     <!-- Beat -->
     <audio id="tingGanIn">
       <source src="ting-gan-in.mp3" type="audio/mpeg" />
     </audio>
 
     <main>
-      <div class="container__image speakers"></div>
-      <div class="container__image sun"></div>
+      <div class="container__speakers" onclick="togglePlay()">
+        <img src="assets/speakers.png" alt="speakers" />
+      </div>
       <div class="container__text">
         <h1>Midsommar Rave</h1>
-        <div class="container__image container__bangers">
-          <img src="assets/bangers.png" alt="" />
-        </div>
+        <!-- <div class="container__bangers">
+          <img src="assets/bangers.png" alt="bangers logo" />
+        </div> -->
         <h2>Where</h2>
         <p>DJ: Deadnote</p>
         <p>Organizer: Deadnote</p>
