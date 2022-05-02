@@ -32,3 +32,17 @@ body {
     object-fit: cover;
     border: 1px solid red;
 }
+
+/* Animations */
+  .speaker-ball {
+    animation: animatedimg 150s linear infinite;
+  }
+  
+  @keyframes animatedimg {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
