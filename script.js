@@ -2,17 +2,19 @@
 const tingGanIn = document.querySelector("#tingGanIn");
 let isPlaying = false;
 
-document.addEventListener("load", togglePlay());
+// window.onload = function () {
+//   document.getElementById("tingGanIn").play();
+// };
 
 function togglePlay() {
-  //   tingGanIn.volume = 0;
-  //   const fadeAudio = setInterval(() => {
-  //     tingGanIn.volume += 0.02;
+  tingGanIn.volume = 0;
+  const fadeAudio = setInterval(() => {
+    tingGanIn.volume += 0.02;
 
-  //     if (tingGanIn.volume > 0.4) {
-  //       clearInterval(fadeAudio);
-  //     }
-  //   }, 100);
+    if (tingGanIn.volume > 0.4) {
+      clearInterval(fadeAudio);
+    }
+  }, 100);
 
   tingGanIn.currentTime = 1.5; // this always resets the song back to 1.5s in
   isPlaying ? tingGanIn.pause() : tingGanIn.play();

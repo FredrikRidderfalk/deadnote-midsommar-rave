@@ -13,8 +13,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Macondo+Swash+Caps&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
 
     <!-- GSAP CDNs -->
@@ -36,13 +40,15 @@
       <img src="assets/sun.png" alt="sun" />
     </div>
 
-    <!-- Beat -->
-    <audio id="tingGanIn">
-      <source src="ting-gan-in.mp3" type="audio/mpeg" />
-    </audio>
-
     <main>
       <div class="container__speakers" onclick="togglePlay()">
+        <div class="container__speaker-text">
+          <h2>Tickle me</h2>
+          <span class="material-symbols-outlined">expand_more</span>
+        </div>
+        <audio id="tingGanIn">
+          <source src="assets/ting-gan-in.mp3" type="audio/mpeg" />
+        </audio>
         <img src="assets/speakers.png" alt="speakers" />
       </div>
       <div class="container__text">
@@ -54,8 +60,12 @@
         <h2>Location: Röda Sten, Göteborg</h2>
         <p>DJ: Deadnote</p>
         <p>Organizer: Deadnote</p>
-        <h2>American Expats Welcome!</h2>
+        <h2>💐💐💐 American Expats Welcome! 💐💐💐</h2>
       </div>
     </main>
+
+    <footer class="footer">
+      Powered by <span class="bam">BAM</span> Soundsystem
+    </footer>
   </body>
 </html>
